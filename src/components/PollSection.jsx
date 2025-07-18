@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Confetti from "react-confetti";
 
-export default function PollSection({ members, onWinnerSelected }) {
+export default function PollSection({ theme, members, onWinnerSelected }) {
   const [spinning, setSpinning] = useState(false);
   const [winner, setWinner] = useState(null);
   const [showConfetti, setShowConfetti] = useState(false);
@@ -50,7 +50,13 @@ export default function PollSection({ members, onWinnerSelected }) {
   };
 
   return (
-    <div className="bg-white p-6 rounded-xl shadow-md text-center">
+    <div
+      className={`p-6 rounded-xl shadow-md text-center ${
+        theme === "gradient"
+          ? "bg-black bg-opacity-40 text-white"
+          : "bg-white text-gray-900"
+      }`}
+    >
       <h2 className="text-2xl font-bold mb-4">🎯 Run Poll</h2>
 
       <button

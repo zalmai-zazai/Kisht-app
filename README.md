@@ -103,10 +103,11 @@ npm run dev
 ### Dashboard
 
 ![Dashboard](public/screenshots/dashboard.png)
+![Dashboard](public/screenshots/dashboarddark.png)
 
-### Poll & Winner Animation
+### Login & Winner Animation
 
-![Poll](public/screenshots/poll.png)
+![Login](public/screenshots/login.png)
 
 ### Previous Kisht Details
 
