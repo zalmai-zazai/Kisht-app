@@ -117,7 +117,7 @@ npm run dev
 
 ### ✨ Live Demo
 
-_(Add link when deployed)_
+(https://kisht.netlify.app/)
 
 ---
 
