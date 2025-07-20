@@ -24,26 +24,6 @@ export default function App() {
   if (!user) {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-blue-700 to-black text-white px-4">
-        {/* Logo */}
-        <motion.div
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          transition={{ duration: 0.8, type: "spring" }}
-          className="mb-8"
-        >
-          <a
-            href="https://www.darkrisen.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="/logo.png"
-              alt="Darkrisen logo"
-              className="w-44 cursor-pointer rounded-full shadow-lg border-4 border-white hover:scale-105 transition-transform duration-300"
-            />
-          </a>
-        </motion.div>
-
         {/* Heading */}
         <motion.h1
           initial={{ opacity: 0, y: -50 }}
@@ -87,6 +67,36 @@ export default function App() {
         >
           Secure & Easy | Trusted by Communities
         </motion.p>
+        {/* Logo */}
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 0.8, type: "spring" }}
+          className="mb-8 flex mt-40 "
+        >
+          <a
+            href="https://www.darkrisen.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/logo.png"
+              alt="Darkrisen logo"
+              className="w-44 mr-4 cursor-pointer rounded-full shadow-lg border-4 border-white hover:scale-105 transition-transform duration-300"
+            />
+          </a>
+          <a
+            href="https://www.Seattlepixels.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/SecondLogo.png"
+              alt="Seattl Pixels logo"
+              className="w-44  cursor-pointer bg-white rounded-full shadow-lg border-4 border-white hover:scale-105 transition-transform duration-300"
+            />
+          </a>
+        </motion.div>
       </div>
     );
   }
